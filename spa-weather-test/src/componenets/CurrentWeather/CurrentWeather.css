@@ -1,0 +1,102 @@
+.CurrentWeather__weather {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+    font-family: var(--font-raleway);
+    background: rgba(255,255,255,0.8);
+    margin: 20px auto 0 auto;
+    padding: 20px 30px;
+    max-width: 410px;
+}
+
+.CurrentWeather__top,
+.CurrentWeather__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CurrentWeather__city-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.CurrentWeather__weather-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    margin: 5px 0px;
+    text-transform: capitalize;
+}
+
+.CurrentWeather__weather-icon {
+    width: 80px;
+}
+
+.CurrentWeather__temperature {
+    font-weight: 600;
+    font-size: 70px;
+    width: auto;
+    letter-spacing: -5px;
+    margin: 10px 0;
+}
+
+.CurrentWeather__details {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.CurrentWeather__row {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;    
+    gap: 5px;
+    margin-top:5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.CurrentWeather__label {
+    text-align: right;
+    flex-basis: 100px;
+}
+
+.CurrentWeather__label::after{
+    content: ':';
+    margin-left: 3px;
+    width: 0px;
+    height: 0px;
+    font-weight: 800;
+}
+
+.CurrentWeather__value {
+    text-align: right;
+    flex-basis: 70px;
+}
+
+.CurrentWeather__label.top {
+    border-bottom: 1.5px solid #fff;
+    margin-bottom: 2px;
+}
+
+.CurrentWeather__exportButtons {
+    margin: 20px auto 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.CurrentWeather__exportButtons button {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background: rgba(255,255,255,0.8);
+    padding: 10px 15px;
+    font-family: var(--font-raleway);
+}
